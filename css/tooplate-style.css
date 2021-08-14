@@ -53,7 +53,8 @@ h4 {
 }
 
 p {
-  color: #757575;
+  /*color: #757575;*/
+  color: #000000;
   font-size: 16px;
   font-weight: 300;
   line-height: 29px;
@@ -88,7 +89,8 @@ p {
   font-weight: normal;
   letter-spacing: 0.5px;
   padding: 0 55px;
-  background: #000000;
+  /*background: #000000;*/
+  background: #0000FF
   border-radius: 1px;
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
@@ -193,41 +195,6 @@ a:hover, a:active, a:focus {
   background-size: cover !important;
 }
 
-
-#container {
-  overflow: hidden;
-  height: 400px;
-  background: #edeae8;
-  position: relative;
-}
-
-video {
-  position: absolute;
-  
-  /* Vertical and Horizontal center*/
-  left: 50%; top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.fullscreen-bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    overflow: hidden;
-}
-.fullscreen-bg-video video{
-    min-height: 700px;
-    min-width: 100%;
-    width: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
-
 #about, #publication,
 #people, #joinus, #contact, footer {
   background: #ffffff;
@@ -296,7 +263,8 @@ video {
 
 .custom-navbar {
   margin-bottom: 0;
-  background-color: #000000;
+  /* background-color: #000000; */
+  background-color: #000080;
   padding: 20px 0;
 }
 
@@ -366,7 +334,8 @@ video {
     background: 0 0;
   }
   .custom-navbar.top-nav-collapse {
-    background: #000000;
+    /* background: #000000; */
+    background: #000080;
     padding: 15px 0;
   }
 }
@@ -484,6 +453,19 @@ video {
   margin: 0 0 0 30px;
 }
 
+#contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contact-info h3 {
+  overflow: hidden;
+  font-size: 14px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  float: right;
+  margin: 0 0 0 30px;
+}
 
 /*---------------------------------------
   PROJECT
@@ -606,7 +588,7 @@ video {
   CONTACT
 -----------------------------------------*/
 
-#contact {
+/*#contact {
   background: url('../images/contact-bg.jpg') 50% 0 repeat-y fixed;
   background-size: cover;
   background-position: center center;
@@ -651,7 +633,7 @@ video {
   padding: 0;
   line-height: 50px;
 }
-
+*/
 
 /*---------------------------------------
   FOOTER
