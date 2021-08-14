@@ -209,6 +209,25 @@ video {
   transform: translate(-50%, -50%);
 }
 
+.fullscreen-bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+.fullscreen-bg-video video{
+    min-height: 700px;
+    min-width: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
 #about, #publication,
 #people, #joinus, #contact, footer {
   background: #ffffff;
