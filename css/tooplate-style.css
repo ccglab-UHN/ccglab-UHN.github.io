@@ -193,6 +193,22 @@ a:hover, a:active, a:focus {
   background-size: cover !important;
 }
 
+
+#container {
+  overflow: hidden;
+  height: 400px;
+  background: #edeae8;
+  position: relative;
+}
+
+video {
+  position: absolute;
+  
+  /* Vertical and Horizontal center*/
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #about, #publication,
 #people, #joinus, #contact, footer {
   background: #ffffff;
