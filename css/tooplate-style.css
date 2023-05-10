@@ -483,6 +483,20 @@ video {
   margin: 0 0 0 30px;
 }
 
+#news {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.news-info h3 {
+  overflow: hidden;
+  font-size: 14px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  float: right;
+  margin: 0 0 0 30px;
+}
+
 #contact {
   padding-top: 100px;
   padding-bottom: 100px;
