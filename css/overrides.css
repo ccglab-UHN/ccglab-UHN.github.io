@@ -198,7 +198,7 @@ video {
   align-items: flex-start;
   gap: 32px;
   margin-top: 24px;
-  flex-wrap: nowrap; /* stack on small screens */
+  flex-direction: row; /* stack on small screens */
 }
 
 /* Map sizing */
