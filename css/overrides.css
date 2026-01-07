@@ -40,7 +40,7 @@
   border-radius: 16px;
   padding: 32px;
   box-shadow: 0 10px 28px rgba(0,0,0,0.06);
-  max-width: 1050px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
@@ -58,8 +58,11 @@ p {
 .joinus-info p,
 .news-info p,
 .contact-info p {
-  max-width: 80ch;
+  max-width: 90ch;                 /* a bit wider than 80ch */
+  margin-left: auto;
+  margin-right: auto;              /* centers the paragraph column */
 }
+
 
 /* Nicer link styling */
 a {
@@ -94,11 +97,6 @@ a {
 .people-info img {
   border-radius: 12px;
   box-shadow: 0 8px 18px rgba(0,0,0,0.10);
-}
-
-/* Reduce “wall of <br>” effect a bit */
-.people-info br {
-  display: none; /* optional - if this breaks spacing, remove this */
 }
 
 /* =========================
