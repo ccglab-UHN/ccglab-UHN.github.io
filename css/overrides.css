@@ -128,3 +128,32 @@ video {
   clear: both;
 }
 
+/* ===== Responsive centering fix (MacBook / smaller screens) ===== */
+@media (max-width: 992px) {
+
+  /* Center the card contents */
+  .about-info,
+  .publication-info,
+  .people-info,
+  .joinus-info,
+  .news-info,
+  .contact-info {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Stack people images instead of floating */
+  #people img[align="left"][width="150"][height="200"] {
+    float: none;
+    display: block;
+    margin: 0 auto 10px auto;  /* center image */
+    clear: both;
+  }
+
+  /* Center text under images on small screens */
+  .people-info p {
+    text-align: left;          /* readable */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
