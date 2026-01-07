@@ -124,10 +124,10 @@ video {
 
 #people img[align="left"][width="150"][height="200"] {
   float: left;
-  margin: 0 20px 6px 0;
+  margin: 0 20px 2px 0;
   clear: both;
 }
 
 .people-info p {
-  margin-bottom: 6px;
+  margin-bottom: 2px;
 }
