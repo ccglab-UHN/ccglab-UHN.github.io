@@ -121,3 +121,10 @@ video {
   transform: translateX(-50%) translateY(-50%);
   background-size: cover;
 }
+
+/* People section: prevent text/images from overlapping between entries */
+#people img[align="left"] {
+  float: left;            /* make the behavior consistent */
+  margin: 0 20px 16px 0;
+  clear: both;            /* THIS is the key: each new left image starts on a new line */
+}
