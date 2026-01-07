@@ -241,3 +241,27 @@ video {
     text-align: center;
   }
 }
+
+/* =========================
+   THEME / COLORS
+   ========================= */
+:root {
+  --accent-blue: #2f6fed;
+  --accent-blue-soft: #eaf0ff;
+  --accent-blue-muted: #5c78c9;
+}
+
+/* =========================
+   COSMETIC POLISH
+   ========================= */
+.about-info,
+.publication-info,
+.people-info,
+.joinus-info,
+.news-info,
+.contact-info {
+  border-top: 4px solid var(--accent-blue);
+  transition: box-shadow 160ms ease, transform 160ms ease;
+}
+
+/* ...rest of the cosmetic rules */
