@@ -1,34 +1,54 @@
+```css
 /* =========================
-   Global layout + typography
+   Overrides (clean + centered + responsive)
    ========================= */
 
+/* 1) CONTAINER: keep site nicely wide + symmetric padding */
 .container {
   width: 100%;
-  max-width: 1200px;      /* wider than classic 960 */
+  max-width: 1200px;
   padding-left: 24px;
   padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Reduce the template’s very large section padding */
+/* 2) SECTION SPACING + ALIGNMENT (stop template centering) */
 #about, #publication, #people, #joinus, #news, #contact {
   padding-top: 72px;
   padding-bottom: 72px;
-  text-align: left;       /* IMPORTANT: stop centering everything */
+  text-align: left;
 }
 
-/* Keep headings nicely centered if you want that look */
+/* Keep section headings centered (optional aesthetic) */
 #about h1, #publication h1, #people h1, #joinus h1, #news h1, #contact h1 {
   text-align: center;
-  margin-bottom: 28px;
+  margin: 0 0 28px 0;
   font-weight: 700;
 }
 
-/* Add subtle section background bands so the page feels structured */
+/* Subtle background bands for some sections */
 #publication, #joinus, #contact {
   background: #f6f7fb;
 }
 
-/* Create “card” surfaces for section content */
+/* 3) IMPORTANT: Stop Bootstrap grid offsets/gutters from “nudging” sections */
+#about .row, #publication .row, #people .row, #joinus .row, #news .row, #contact .row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#about [class*="col-"],
+#publication [class*="col-"],
+#people [class*="col-"],
+#joinus [class*="col-"],
+#news [class*="col-"],
+#contact [class*="col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* 4) CARD SURFACES: centered on the full page */
 .about-info,
 .publication-info,
 .people-info,
@@ -40,47 +60,45 @@
   border-radius: 16px;
   padding: 32px;
   box-shadow: 0 10px 28px rgba(0,0,0,0.06);
+
   max-width: 1180px;
-  margin: 0 auto;
+  margin: 0 auto !important;     /* center the entire box */
+  text-align: left;
+  box-sizing: border-box;
 }
 
-/* Improve paragraph readability */
+/* 5) TYPOGRAPHY */
 p {
   line-height: 1.7;
   letter-spacing: 0;
   color: rgba(0,0,0,0.78);
+  margin: 0 0 12px 0;
 }
 
-/* Don’t let long lines stretch too wide inside the cards */
+/* Center the text column within cards (without center-aligning text) */
 .about-info p,
 .publication-info p,
 .people-info p,
 .joinus-info p,
 .news-info p,
 .contact-info p {
-  max-width: 90ch;                 /* a bit wider than 80ch */
+  max-width: 95ch;
   margin-left: auto;
-  margin-right: auto;              /* centers the paragraph column */
+  margin-right: auto;
 }
 
-
-/* Nicer link styling */
+/* Links */
 a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
 
-/* =========================
-   Publications + News polish
-   ========================= */
-
-/* Give each publication/news line a hoverable row feel */
+/* 6) PUBLICATIONS + NEWS: hover row polish */
 .publication-info p,
 .news-info p {
   padding: 10px 12px;
   border-radius: 10px;
-  margin-bottom: 10px;
   transition: transform 120ms ease, background 120ms ease;
 }
 
@@ -90,20 +108,28 @@ a {
   transform: translateY(-1px);
 }
 
-/* =========================
-   People section readability
-   ========================= */
-
+/* 7) PEOPLE: photo polish + stable float layout on desktop */
 .people-info img {
   border-radius: 12px;
   box-shadow: 0 8px 18px rgba(0,0,0,0.10);
 }
 
-/* =========================
-   Safety: stop global video rules from affecting non-hero
-   ========================= */
+/* This is the key: keep each person starting on a new line.
+   (Target headshots if you want to avoid affecting other left-aligned images.) */
+#people img[align="left"][width="150"][height="200"] {
+  float: left;
+  margin: 0 20px 6px 0;  /* reduce vertical spacing */
+  clear: both;
+}
 
-/* Override your global video rule so only #home video is fixed */
+/* If you have any right-aligned images in People and want consistency */
+#people img[align="right"] {
+  float: right;
+  margin: 0 0 6px 20px;
+  clear: both;
+}
+
+/* 8) VIDEO SAFETY: ensure only hero video is fixed */
 video {
   position: static;
   height: auto;
@@ -122,88 +148,36 @@ video {
   background-size: cover;
 }
 
-#people img[align="left"] {
-  float: left;
-  margin: 0 20px 2px 0;
-  clear: both;
-}
-
-/* Make the section wrapper truly symmetric */
-#people .row,
-#about .row,
-#publication .row,
-#joinus .row,
-#news .row,
-#contact .row {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-/* Remove bootstrap column padding that can skew card centering */
-#people [class*="col-"],
-#about [class*="col-"],
-#publication [class*="col-"],
-#joinus [class*="col-"],
-#news [class*="col-"],
-#contact [class*="col-"] {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-
-/* ===== Responsive centering fix (MacBook / smaller screens) ===== */
+/* 9) RESPONSIVE: stack headshots + keep everything visually centered */
 @media (max-width: 992px) {
 
-  /* Center the card contents */
+  /* Make card padding a bit tighter on smaller screens */
   .about-info,
   .publication-info,
   .people-info,
   .joinus-info,
   .news-info,
   .contact-info {
-    margin-left: auto;
-    margin-right: auto;
+    padding: 22px;
   }
 
-  /* Stack people images instead of floating */
-  #people img[align="left"][width="150"][height="200"] {
-    float: none;
+  /* Stack people photos so the text doesn’t wrap weirdly on MacBook/smaller widths */
+  #people img[align="left"][width="150"][height="200"],
+  #people img[align="right"] {
+    float: none !important;
     display: block;
-    margin: 0 auto 10px auto;  /* center image */
+    margin: 0 auto 10px auto !important;
     clear: both;
   }
 
-  /* Center text under images on small screens */
-  .people-info p {
-    text-align: left;          /* readable */
-    margin-left: auto;
-    margin-right: auto;
+  /* Make text column use more of the card width on smaller screens */
+  .about-info p,
+  .publication-info p,
+  .people-info p,
+  .joinus-info p,
+  .news-info p,
+  .contact-info p {
+    max-width: 100%;
   }
 }
-
-/* Visually extend card background to the left for symmetry */
-.about-info,
-.publication-info,
-.people-info,
-.joinus-info,
-.news-info,
-.contact-info {
-  position: relative;
-}
-
-.about-info::before,
-.publication-info::before,
-.people-info::before,
-.joinus-info::before,
-.news-info::before,
-.contact-info::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -24px;                 /* EXTEND LEFT EDGE */
-  width: 24px;
-  background: #ffffff;
-  border-top-left-radius: 16px;
-  border-bottom-left-radius: 16px;
-}
+```
