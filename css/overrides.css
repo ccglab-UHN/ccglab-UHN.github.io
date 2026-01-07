@@ -1,4 +1,3 @@
-```css
 /* =========================
    Overrides (clean + centered + responsive)
    ========================= */
@@ -198,7 +197,11 @@ video {
   align-items: flex-start;
   gap: 32px;
   margin-top: 24px;
-  flex-direction: row; /* stack on small screens */
+
+  flex-direction: row;
+  flex-wrap: nowrap;          /* ✅ NEW: prevents desktop wrapping/stacking */
+  width: 100%;                /* ✅ NEW: stable sizing inside the card */
+  box-sizing: border-box;     /* ✅ NEW: consistent width calculations */
 }
 
 /* Map sizing */
@@ -229,6 +232,7 @@ video {
 @media (max-width: 768px) {
   #contact .contact-layout {
     flex-direction: column;
+    flex-wrap: wrap;          /* ✅ NEW: makes stacking explicit */
     align-items: center;
     text-align: center;
   }
@@ -237,6 +241,3 @@ video {
     text-align: center;
   }
 }
-
-
-```
