@@ -123,3 +123,23 @@ video {
   transform: translateX(-50%) translateY(-50%);
   background-size: cover;
 }
+
+/* Undo bootstrap offset causing content to look pushed left */
+#publication .col-md-offset-2,
+#about .col-md-offset-2,
+#people .col-md-offset-2,
+#joinus .col-md-offset-2,
+#news .col-md-offset-2,
+#contact .col-md-offset-2 {
+  margin-left: 0 !important;
+}
+
+#publication .col-md-10,
+#about .col-md-10,
+#people .col-md-10,
+#joinus .col-md-10,
+#news .col-md-10,
+#contact .col-md-10 {
+  width: 100% !important;
+}
+
