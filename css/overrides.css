@@ -122,9 +122,12 @@ video {
   background-size: cover;
 }
 
-/* People section: prevent text/images from overlapping between entries */
-#people img[align="left"] {
-  float: left;            /* make the behavior consistent */
-  margin: 0 20px 16px 0;
-  clear: both;            /* THIS is the key: each new left image starts on a new line */
+#people img[align="left"][width="150"][height="200"] {
+  float: left;
+  margin: 0 20px 6px 0;
+  clear: both;
+}
+
+.people-info p {
+  margin-bottom: 6px;
 }
