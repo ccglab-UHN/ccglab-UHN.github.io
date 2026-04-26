@@ -638,7 +638,7 @@ h3 {
   box-shadow: 0 16px 38px rgba(7, 17, 31, 0.16);
   height: 285px;
   object-fit: cover;
-  object-position: center;
+  object-position: center 32%;
   width: 100%;
 }
 
@@ -864,6 +864,73 @@ footer .copyright-text {
 }
 
 /* Responsive tuning */
+@media (min-width: 1100px) {
+  body {
+    font-size: 17px;
+  }
+
+  .container {
+    max-width: 1320px;
+  }
+
+  .content-card {
+    padding: clamp(46px, 4.6vw, 76px);
+  }
+
+  .section-lede,
+  .research-copy p,
+  .opportunity-card p,
+  .news-timeline p,
+  .contact-text p {
+    font-size: clamp(1.08rem, 0.92rem + 0.34vw, 1.24rem);
+  }
+
+  .team-grid {
+    gap: 28px;
+  }
+
+  .person-card:not(.featured) {
+    display: grid;
+    gap: 18px 28px;
+    grid-template-columns: minmax(190px, 240px) minmax(0, 1fr);
+    padding: 24px;
+  }
+
+  .person-card:not(.featured) img {
+    grid-row: 1 / span 3;
+    height: clamp(250px, 23vw, 330px);
+    object-position: center 28%;
+  }
+
+  .person-card:not(.featured) .person-role {
+    margin-top: 0;
+  }
+
+  .person-card:not(.featured) > p:not(.person-role):not(.person-links),
+  .person-card.featured div > p:not(.person-role) {
+    font-size: clamp(1.06rem, 0.92rem + 0.3vw, 1.2rem);
+    line-height: 1.82;
+  }
+
+  .person-card.featured {
+    grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+  }
+
+  .person-card.featured img {
+    height: clamp(285px, 23vw, 350px);
+    object-position: center 28%;
+  }
+
+  .person-role {
+    font-size: 0.78rem;
+    padding: 10px 14px;
+  }
+
+  .person-links span {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 1060px) {
   .research-grid,
   .opportunity-grid {
