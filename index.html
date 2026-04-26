@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-<title>CCGLab</title>
+<title>CCG Lab | Computational Cancer Genomics</title>
 
 <!--
 
@@ -14,15 +14,15 @@ http://www.tooplate.com/view/2099-scenic
 
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="Computational Cancer Genomics Lab at Princess Margaret Cancer Centre and University Health Network.">
+<meta name="keywords" content="computational cancer genomics, cancer biology, genomics, machine learning, University Health Network, Princess Margaret Cancer Centre">
+<meta name="author" content="Computational Cancer Genomics Lab">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071a3d">
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/magnific-popup.css">
-
 <link rel="stylesheet" href="css/owl.theme.css">
 <link rel="stylesheet" href="css/owl.carousel.css">
 
@@ -30,8 +30,7 @@ http://www.tooplate.com/view/2099-scenic
 <link rel="stylesheet" href="css/tooplate-style.css">
 <link rel="stylesheet" href="css/overrides.css">
 
-<link rel="icon" href="images/favicon.png" type="images/lab_logo.png">
-
+<link rel="icon" href="images/lab_logo.png" type="image/png">
 
 </head>
 <body>
@@ -43,25 +42,19 @@ http://www.tooplate.com/view/2099-scenic
      </div>
 </div>
 
-
-
-
 <!-- MENU -->
-<div class="navbar custom-navbar navbar-fixed-top" role="navigation">
+<nav class="navbar custom-navbar navbar-fixed-top" role="navigation" aria-label="Primary navigation">
      <div class="container">
 
-          <!-- NAVBAR HEADER -->
           <div class="navbar-header">
-               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+               <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-label="Toggle navigation">
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
                </button>
-               <!-- lOGO -->
-               <a href="index.html" class="navbar-brand">CCG Lab</a>
+               <a href="#home" class="navbar-brand smoothScroll">CCG Lab</a>
           </div>
 
-          <!-- MENU LINKS -->
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
                     <li><a href="#home" class="smoothScroll">Home</a></li>
@@ -75,600 +68,325 @@ http://www.tooplate.com/view/2099-scenic
           </div>
 
      </div>
-</div>
-
+</nav>
 
 <!-- HOME -->
-<section id="home" class="parallax-section">
+<section id="home" class="parallax-section hero-section">
+     <video class="hero-video" playsinline autoplay loop muted poster="images/lab_logo.png" aria-hidden="true">
+          <source type="video/mp4" src="videos/DNA.mp4">
+     </video>
      <div class="overlay"></div>
      <div class="container">
           <div class="row">
-
-             <div class="col-md-8 col-sm-12">
+               <div class="col-md-9 col-sm-12">
                     <div class="home-text">
                          <h1>Welcome to the Computational Cancer Genomics lab!</h1>
-                         <p> <font size="4">Unraveling the genetic code of cancer
-                         <ul class="section-btn">
+                         <p class="hero-lede">Unraveling the genetic code of cancer</p>
+                         <div class="hero-actions">
+                              <a href="#about" class="smoothScroll primary-button">Discover More</a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</section>
 
-                              <a href="#about" class="smoothScroll">Discover More</a>
-                         </ul>
-                       </font> </p>
+<!-- ABOUT -->
+<section id="about" class="parallax-section section-panel">
+     <div class="container">
+          <div class="content-card about-info">
+               <h2 class="section-heading">Research</h2>
+               <p class="section-lede">Welcome to the Computational Cancer Genomics Lab at the <a href="http://www.uhnresearch.ca/institutes/pm" target="_blank" rel="noopener noreferrer">Princess Margaret Cancer Center</a> at the <a href="http://www.uhn.ca" target="_blank" rel="noopener noreferrer">University Health Network</a>. We study the role of genomic variations in driving tumor progression.</p>
+
+               <div class="research-feature">
+                    <div class="research-copy">
+                         <p><strong>Our lab studies cancer biology by building computational tools with state-of-the art genomics, biophysics, and machine learning techniques. We are looking for enthusiastic researchers and students interested in computational biology to <a href="#joinus" class="smoothScroll">JOIN US</a>!</strong></p>
+                         <p>Rapid declines in sequencing costs have enabled large-scale genome and exome sequencing for various cancer cohorts. A critical shared objective among such studies has been to understand how genomic variants affect tumor etiology. How may we develop robust quantitative models to predict the impact of somatic mutations on gene expression and protein function? Furthermore, how may we leverage these quantitative models to prioritize genomic variants and utilize this knowledge to develop new cancer therapeutics? Our lab is interested in developing integrative methods that use multiple data resources and cross-disciplinary approaches to address questions of this nature.</p>
+                    </div>
+                    <div class="research-visual-stack">
+                         <img src="images/braf.transparent.png" alt="BRAF protein structure visualization" class="research-illustration">
+                         <img src="images/paperE_schematic1.png" alt="Cancer driver continuum schematic" class="research-illustration wide">
                     </div>
                </div>
 
-
-                    <!--video style="max-width:125%; min-height:100%; overflow:hidden;" playsinline autoplay loop muted -->
-                    <video playsinline autoplay loop muted >
-                        <source type="video/mp4" src="videos/DNA.mp4">
-                    </video>
-
+               <div class="research-grid">
+                    <article class="research-card">
+                         <img src="images/braf.transparent.png" alt="Protein structure research illustration">
+                         <p>Previously, we have developed methods that integrate protein structure and protein motion information to evaluate the molecular impact of cancer mutations and identify putative cancer driver genes. Currently, we are building machine learning methods integrating protein structure, cancer genomics, and clinical data to identify novel drug targets and predict drugs' efficacy &amp; side effects among cancer patients.</p>
+                    </article>
+                    <article class="research-card">
+                         <img src="images/paperE_schematic1.png" alt="Cancer progression schematic">
+                         <p>The canonical model of cancer progression dichotomizes cancer mutations as drivers and passengers. However, our recent analysis of thousands of cancer genomes indicates the presence of a continuum where strong and weak drivers can contribute to cancer progression via epistatic interactions or their aggregated/additive effects. As a follow-up to this work, we are currently developing novel methods to investigate the role of cooperative genetic and cellular level interactions in driving tumor growth and metastases.</p>
+                    </article>
+                    <article class="research-card">
+                         <img src="images/SVFX_schematic_updated.png" alt="Structural variation schematic">
+                         <p>The overwhelming majority of cancer mutations fall within non-coding regions of the genome. Clear insights into how non-coding mutations play causal roles in various cancer types remain limited. Similar to non-coding mutations, we have little understanding of how SVs influence cancer progression. My group is interested in building methodologies for understanding the role of non-coding mutations and SVs in different cancer cohorts.</p>
+                    </article>
                </div>
-
-          </div>
-</section>
-
-
-<!-- ABOUT -->
-<section id="about" class="parallax-section">
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-12 col-sm-12" -->
-               <!-- div class="col-md-10 col-sm-12" -->
-                    <div class="about-info">
-                      <h1> <b>Research<b></h1>
-                      <br>
-                      <br>
-                      <p style="text-align:justify"><font size="5">Welcome to the Computational Cancer Genomics Lab at the <a href="http://www.uhnresearch.ca/institutes/pm">Princess Margaret Cancer Center</a> at the <a href="http://www.uhn.ca">University Health Network</a>. We study the role of genomic variations in driving tumor progression.</font></p>
-                      <br>
-                      <p style="text-align:justify"><font size="4"><b>Our lab studies cancer biology by building computational tools with state-of-the art genomics, biophysics, and machine learning techniques. We are looking for enthusiastic researchers and students interested in computational biology to <a href="#joinus" class="smoothScroll"><b>JOIN US</a>!</b></font></p>
-                      <br>
-                      <p style="text-align:justify"><font size="4"> Rapid declines in sequencing costs have enabled large-scale genome and exome sequencing for various cancer cohorts. A critical shared objective among such studies has been to understand how genomic variants affect tumor etiology. How may we develop robust quantitative models to predict the impact of somatic mutations on gene expression and protein function? Furthermore, how may we leverage these quantitative models to prioritize genomic variants and utilize this knowledge to develop new cancer therapeutics? Our lab is interested in developing integrative methods that use multiple data resources and cross-disciplinary approaches to address questions of this nature. </font> </p>
-                      <br>
-
-                      <img src="images/braf.transparent.png" align="left" width="300" height="250" HSPACE="20">
-                      <br>
-                      <br>
-                      <p style="text-align:justify"><font size="4"> Previously, we have developed methods that integrate protein structure and protein motion information to evaluate the molecular impact of cancer mutations and identify putative cancer driver genes. Currently, we are building machine learning methods integrating protein structure, cancer genomics, and clinical data to identify novel drug targets and predict drugs' efficacy & side effects among cancer patients. </font> </p>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <img src="images/paperE_schematic1.png" align="right" width="450" height="300" HSPACE="20">
-
-                      <p style="text-align:justify"><font size="4"> The canonical model of cancer progression dichotomizes cancer mutations as drivers and passengers. However, our recent analysis of thousands of cancer genomes indicates the presence of a continuum where strong and weak drivers can contribute to cancer progression via epistatic interactions or their aggregated/additive effects. As a follow-up to this work, we are currently developing novel methods to investigate the role of cooperative genetic and cellular level interactions in driving tumor growth and metastases.</font> </p>
-                      <br>
-                      <br>
-                      <img src="images/SVFX_schematic_updated.png" align="left" width="300" height="350" HSPACE="20">
-                      <br>
-                      <br>
-                      <br>
-                      <p style="text-align:justify"><font size="4"> The overwhelming majority of cancer mutations fall within non-coding regions of the genome. Clear insights into how non-coding mutations play causal roles in various cancer types remain limited. Similar to non-coding mutations, we have little understanding of how SVs influence cancer progression. My group is interested in building methodologies for understanding the role of non-coding mutations and SVs in different cancer cohorts.</font> </p>
-                      <br>
-               </div>
-
           </div>
      </div>
-
-</div>
-
 </section>
 
-
-<!-- ABOUT -->
-<section id="publication" class="parallax-section">
+<!-- PUBLICATIONS -->
+<section id="publication" class="parallax-section section-panel alt-section">
      <div class="container">
-          <div class="row">
-
-               <div class="col-md-12 col-sm-12" -->
-               <!-- div class="col-md-10 col-sm-12" -->
-                    <div class="publication-info">
-                      <h1> <b> Recent Publications </b> </h1>
-                      <br>
-                      <p style="text-align:left"><font size="3"><b><a href="https://academic.oup.com/nar/article/53/22/gkaf1325/8382370">DNA shape and epigenomics distinguish the mechanistic origin of human genomic structural variations</a>,</b>
-                         <u>Nadejda Boev**</u>; Mark Gerstein; and Sushant Kumar <b>Nucleic Acids Research (2025)</b></font></p>
-
-                      <p style="text-align:left"><font size="3"><b><a href="https://ashpublications.org/blood/article/146/21/2589/546894/Plasma-lipid-levels-predict-chemotherapy-response">Plasma lipid levels predict chemotherapy response and survival in acute myeloid leukemia</a>,</b>
-                         Cristiana O’Brien; <u>Nirvana Nursimulu**</u>; Anit Tyagi, Rachel Culp-Hill, Andrea Arruda, Tracy Murphy, Mark D. Minden, Andrew Kent, Brett Stevens, Daniel A. Pollyea, Kristin Hope, <u>Sushant Kumar**</u>, Julie A. Reisz, Angelo D'Alessandro, Courtney L. Jones; <b> Blood (2025)</b></font></p>
-
-                      <p style="text-align:left"><font size="3"><b><a href="https://www.nature.com/articles/s41576-025-00885-4">Regulatory genome annotation</a>,</b>
-                      <u>Sushant Kumar</u>; and Mark Gerstein. <b>Nature Reviews Genetics (2025)</b></font></p>
-
-                      <p style="text-align:left"><font size="3"><b><a href="https://wires.onlinelibrary.wiley.com/doi/full/10.1002/wcms.70029">Building Nucleosome Positioning Maps: Discovering Hidden Gems</a>,</b>
-                      Yosef Masoudi-Sobhanzadeh; Anisur Rahman; Shuxiang Li; Saman Bazmi; <u>Sushant Kumar</u>; and Anna Panchenko <b>WIREs Compuational Molecular Science (2025)</b></font></p>
-
-                      <p style="text-align:left"><font size="3"><b><a href="https://www.biorxiv.org/content/10.1101/2025.09.20.677550v1.full">MicroNucML: A machine learning approach for micronuclei segmentation and the refinement of nuclei-micronuclei relationships</a>,</b>
-                      Yukai Wang; Nadejda Boev; Ulises O. Garcia; Kate M. Macdonald; Shane M. Harding and <u>Sushant Kumar</u>* <b>bioRxiv (2025)</b></font></p>
-
-                      <p style="text-align:left"><font size="3"><b><a href="https://www.cell.com/trends/genetics/fulltext/S0168-9525(23)00026-4">Unified views on variant impact across many diseases</a>,</b>
-                      <u>Sushant Kumar</u>*; and Mark Gerstein.  <b>Trends in Genetics (2023)</b></font></p>
-
-                      <br>
-                      <br>
-                      <br>
-                      <p style="text-align:left"><font size="4"><b>For full publication list please check our <u><a href="https://scholar.google.com/citations?user=ujvDsFUAAAAJ&hl=en">google scholar page</a></u></b></font></p>
+          <div class="content-card publication-info">
+               <h2 class="section-heading">Recent Publications</h2>
+               <div class="publication-list">
+                    <article class="publication-card">
+                         <h3><a href="https://academic.oup.com/nar/article/53/22/gkaf1325/8382370" target="_blank" rel="noopener noreferrer">DNA shape and epigenomics distinguish the mechanistic origin of human genomic structural variations</a>,</h3>
+                         <p><u>Nadejda Boev**</u>; Mark Gerstein; and Sushant Kumar <strong>Nucleic Acids Research (2025)</strong></p>
+                    </article>
+                    <article class="publication-card">
+                         <h3><a href="https://ashpublications.org/blood/article/146/21/2589/546894/Plasma-lipid-levels-predict-chemotherapy-response" target="_blank" rel="noopener noreferrer">Plasma lipid levels predict chemotherapy response and survival in acute myeloid leukemia</a>,</h3>
+                         <p>Cristiana O’Brien; <u>Nirvana Nursimulu**</u>; Anit Tyagi, Rachel Culp-Hill, Andrea Arruda, Tracy Murphy, Mark D. Minden, Andrew Kent, Brett Stevens, Daniel A. Pollyea, Kristin Hope, <u>Sushant Kumar**</u>, Julie A. Reisz, Angelo D'Alessandro, Courtney L. Jones; <strong>Blood (2025)</strong></p>
+                    </article>
+                    <article class="publication-card">
+                         <h3><a href="https://www.nature.com/articles/s41576-025-00885-4" target="_blank" rel="noopener noreferrer">Regulatory genome annotation</a>,</h3>
+                         <p><u>Sushant Kumar</u>; and Mark Gerstein. <strong>Nature Reviews Genetics (2025)</strong></p>
+                    </article>
+                    <article class="publication-card">
+                         <h3><a href="https://wires.onlinelibrary.wiley.com/doi/full/10.1002/wcms.70029" target="_blank" rel="noopener noreferrer">Building Nucleosome Positioning Maps: Discovering Hidden Gems</a>,</h3>
+                         <p>Yosef Masoudi-Sobhanzadeh; Anisur Rahman; Shuxiang Li; Saman Bazmi; <u>Sushant Kumar</u>; and Anna Panchenko <strong>WIREs Compuational Molecular Science (2025)</strong></p>
+                    </article>
+                    <article class="publication-card">
+                         <h3><a href="https://www.biorxiv.org/content/10.1101/2025.09.20.677550v1.full" target="_blank" rel="noopener noreferrer">MicroNucML: A machine learning approach for micronuclei segmentation and the refinement of nuclei-micronuclei relationships</a>,</h3>
+                         <p>Yukai Wang; Nadejda Boev; Ulises O. Garcia; Kate M. Macdonald; Shane M. Harding and <u>Sushant Kumar</u>* <strong>bioRxiv (2025)</strong></p>
+                    </article>
+                    <article class="publication-card">
+                         <h3><a href="https://www.cell.com/trends/genetics/fulltext/S0168-9525(23)00026-4" target="_blank" rel="noopener noreferrer">Unified views on variant impact across many diseases</a>,</h3>
+                         <p><u>Sushant Kumar</u>*; and Mark Gerstein. <strong>Trends in Genetics (2023)</strong></p>
+                    </article>
                </div>
-
+               <p class="section-cta"><strong>For full publication list please check our <a href="https://scholar.google.com/citations?user=ujvDsFUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">google scholar page</a></strong></p>
           </div>
      </div>
-  </div>
 </section>
-
-          
-<!-- PEOPLE -->
-<section id="people" class="parallax-section">
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-12 col-sm-12" -->
-               <!-- div class="col-md-10 col-sm-12" -->
-                    <div class="people-info">
-                    <h1> <b> Team </b></h1>
-                    <br>
-                    <br>
-                     <img src="images/IMG_SK.jpg" align="left" width="150" height="200" HSPACE="20" style="object-fit: cover;">
-                     <br>
-                         <p style="text-align:justify"><font size="4">Sushant Kumar is the <b>Canada Research Chair</b> (Tier 2) in <b>Genomic Medicine</b> and an Assistant Professor in the <b><a href="https://medbio.utoronto.ca/faculty/kumar">Department of Medical Biophysics</b></a> at the University of Toronto. He is also a scientist at the <b><a href="http://www.uhnresearch.ca/institutes/pm">Princess Margaret Cancer Center</a></b>.
-                      His expertise and research interests are in computational biology/bioinformatics, cancer biology, genomics, machine learning, and biophysics. Outside of work, he likes to watch sports documentaries and spend time with family.</font></p>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br> 
-                     <img src="images/IMG_NN.jpg" align="left" width="150" height="200" HSPACE="20" style="object-fit: cover;">
-                     <br>
-                     <p style="text-align:justify"><font size="4">Nirvana Nursimulu is a postdoctoral researcher in the lab.  She completed her undergraduate degree in  Bioinformatics and Computational Biology at the University of Toronto, after which she embarked on a journey through graduate school at the University of Toronto studying Computer Science under the supervision of Dr Parkinson and Dr Moses.  From her previous work, she remains fascinated by how mathematics can be used to capture biological phenomena and model the growth of parasites.  In her free time, she enjoys reading and writing fiction, running, and has occasionally engaged in improvisational theatre.</font></p>
-                     <p style="margin-left:190px; font-size:14px;">
-                          <a href="https://www.linkedin.com/in/nirvana-nursimulu/" target="_blank" style="color:#0A66C2; margin-right:10px; text-decoration:none;">
-                              <i class="fa fa-linkedin-square fa-lg"></i>
-                         </a>
-                         <i>Research interests: Metabolic rewiring in cancer</i>
-                    </p>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <img src="images/IMG_SB.jpg" align="left" width="150" height="200" HSPACE="20" style="object-fit: cover;">
-                     <br>
-                     <p style="text-align:justify"><font size="4">Saman Bazmi is a postdoctoral researcher in the lab. He completed his PhD in Computational Biophysics at Memorial University of Newfoundland. His research interests are computational biology, molecular dynamics, and cancer genomics. In his free time, he likes to watch criminal tv series, hiking, and cooking.</font></p>
-                     <p style="margin-left:190px; font-size:14px;">
-                          <a href="https://www.linkedin.com/in/saman-bazmi/" target="_blank" style="color:#0A66C2; margin-right:10px; text-decoration:none;">
-                              <i class="fa fa-linkedin-square fa-lg"></i>
-                         </a>
-                         <i>Research interests: DNA Structure and Dynamics, Machine Learning</i>
-                    </p>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <img src="images/IMG_Y.jpg" align="left" width="150" height="200" HSPACE="20" style="object-fit: cover;">
-                     <br>
-                     <p style="text-align:justify"><font size="4">Yosef received his Ph.D. in Bioinformatics in 2019 from the University of Tehran and completed a year-long postdoctoral program. Before moving to UHN, Yosef held a faculty teaching position at the Tabriz University of Medical Sciences and then completed a two-year-long postdoctoral course at Queen's University. Yosef has over a decade of teaching experience (from undergraduate to Ph.D. level) in Bioinformatics. He is interested in introducing novel algorithms, developing machine learning methods, and designing efficient data structures for biological applications.</font></p>
-                     <p style="margin-left:190px; font-size:14px;">
-                          <a href="https://www.linkedin.com/in/yosef-masoudi-sobhanzadeh-975235119/" target="_blank" style="color:#0A66C2; margin-right:10px; text-decoration:none;">
-                              <i class="fa fa-linkedin-square fa-lg"></i>
-                         </a>
-                         <i>Research interests: Nucleosomes, Machine Learning</i>
-                    </p>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br> 
-                     <img src="images/IMG_NB2.jpg" align="left" width="150" height="200" HSPACE="20" style="object-fit: cover;">
-                     <br>
-                     <p style="text-align:justify"><font size="4">Nadejda Boev is a PhD student in the Department of Medical Biophysics at the University of Toronto. She completed her undergraduate degree in Biology & Mathematics at Queen's University. In her free time, she enjoys going on walks and listening to podcasts.</font></p>
-                     <p style="margin-left:190px; font-size:14px;">
-                          <a href="https://www.linkedin.com/in/nadejda-boev-509919199/" target="_blank" style="color:#0A66C2; margin-right:10px; text-decoration:none;">
-                              <i class="fa fa-linkedin-square fa-lg"></i>
-                         </a>
-                         <i>Research interests: DNA repair. rare disease and cancer genetics, DNA shape</i>
-                    </p>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <img src="images/IMG_NH.jpg" align="left" width="150" height="200" HSPACE="20" style="object-fit: cover;">
-                     <br>
-                     <p style="text-align:justify"><font size="4">Nour Hanafi is a PhD student in the Department of Medical Biophysics at the University of Toronto (U of T). She completed her undergraduate degree in Molecular Biology with a Chemistry minor at U of T Mississauga, an MHSc in Medical Genomics at U of T, and worked as an analyst at the SickKids’ Centre for Computational Medicine. In her free time, she enjoys long walks, trying out new iced drinks, and watching her favorite sports teams, Atletico Madrid and the Toronto Raptors.</font></p>
-                     <p style="margin-left:190px; font-size:14px;">
-                          <a href="https://www.linkedin.com/in/nour-hanafi-2493ba148/" target="_blank" style="color:#0A66C2; margin-right:10px; text-decoration:none;">
-                              <i class="fa fa-linkedin-square fa-lg"></i>
-                         </a>
-                         <i>Research interests: Protein structure and motion, variant effect, pentrance and expressivity, rare disease and cancer genetics</i>
-                    </p>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <img src="images/IMG_AT.jpg" align="left" width="150" height="200" HSPACE="20" style="object-fit: cover;">
-                     <br>
-                     <p style="text-align:justify"><font size="4"> Alexander Turco is a MSc student in the Department of Medical Biophysics at the University of Toronto (U of T). He completed his undergraduate degree in Bioinformatics with a research specialization at McMaster University. In his free time, he enjoys Rubiks cubes, snowboarding, building computers, and playing his favorite video game, Stardew Valley.</font></p>
-                     <p style="margin-left:190px; font-size:14px;">
-                          <a href="https://www.linkedin.com/in/alexander-turco-400369163/" target="_blank" style="color:#0A66C2; margin-right:10px; text-decoration:none;">
-                              <i class="fa fa-linkedin-square fa-lg"></i>
-                         </a>
-                         <i>Research interests: DNA sequencing, non-coding and dark genome, non-B DNA, tandem repeat expansions, machine learning for genomics</i>
-                    </p>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <img src="images/IMG_H.png" align="left" width="150" height="200" HSPACE="20" style="object-fit: cover;">
-                     <br>
-                     <p style="text-align:justify"><font size="4">Hayden is a MSc student in Applied Computing at University of Toronto. Before that, he completed his undergraduate degree in Computer Science and Mathematics in Hong Kong. His interest surrounds computer vision and enhancing machine learning pipelines for industry uses. In leisure time, he likes hiking, bouldering, and snowboarding.</font></p>
-                     <p style="margin-left:190px; font-size:14px;">
-                          <a href="https://www.linkedin.com/in/cheuk-hei-yu-hayden/" target="_blank" style="color:#0A66C2; margin-right:10px; text-decoration:none;">
-                              <i class="fa fa-linkedin-square fa-lg"></i>
-                         </a>
-                         <i>Research interests: computer vision, machine learning</i>
-                    </p>
-                    <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <img src="images/IMG_MZ.jpg" align="left" width="150" height="200" HSPACE="20" style="object-fit: cover;">
-                     <br>
-                     <p style="text-align:justify"><font size="4">Mingjie Zhao is a MSc student in Applied Computing at the University of Toronto. He completed his undergraduate degree in Statistics and Data Science at the University of Waterloo. Outside of his studies, he enjoys long walks, cooking, and exploring his creativity through drawing and painting.</font></p>
-                     <p style="margin-left:190px; font-size:14px;">
-                          <a href="https://www.linkedin.com/in/mingjie-zhao-ds/" target="_blank" style="color:#0A66C2; margin-right:10px; text-decoration:none;">
-                              <i class="fa fa-linkedin-square fa-lg"></i>
-                         </a>
-                         <i>Research interests: Protein language models, protein structure, machine learning, liquid-liquid-phase separation</i>
-                    </p>
-                    <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <img src="images/IMG_SD.jpeg" align="left" width="150" height="200" HSPACE="20" style="object-fit: cover;">
-                     <br>
-                     <p style="text-align:justify"><font size="4">Sean D’Mello is an MSc student in Medical Biophysics at the University of Toronto and earned his undergraduate degree in Biomedical Engineering from the University of Waterloo. He completed several co-op placements applying machine learning to medicine, including at the ORTHOTron Lab at the University of Waterloo and the Tearney Lab at Massachusetts General Hospital. Outside of academics, Sean enjoys reading, swimming, and camping</font></p>
-                     <p style="margin-left:190px; font-size:14px;">
-                          <a href="https://www.linkedin.com/in/dmellosean/" target="_blank" style="color:#0A66C2; margin-right:10px; text-decoration:none;">
-                              <i class="fa fa-linkedin-square fa-lg"></i>
-                         </a>
-                         <i>Research interests: Machine Learning, Generative AI, Computational Pathology, Multi-omic Analysis</i>
-                    </p>
-                    <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <img src="images/IMG_OA.jpg" align="left" width="150" height="200" HSPACE="20" style="object-fit: cover;">
-                     <br>
-                     <p style="text-align:justify"><font size="4">Omar Alawamry is an MSc student in Medical Biophysics at the University of Toronto, co-supervised by Dr. Mélanie Courtot, and earned his undergraduate degree in Biochemistry at McMaster University. He has conducted translational clinical research at Sunnybrook Research Institute, focusing on the development of liquid biopsies using emerging technologies such as imaging flow cytometry. His current interests lie in cancer genomics and the development of bioinformatic tools. In his free time, he enjoys preparing café-style drinks at home and playing tennis.</font></p>
-                     <p style="margin-left:190px; font-size:14px;">
-                          <a href="https://www.linkedin.com/in/oalawamry/" target="_blank" style="color:#0A66C2; margin-right:10px; text-decoration:none;">
-                              <i class="fa fa-linkedin-square fa-lg"></i>
-                         </a>
-                         <i>Research interests: Bioinformatics, Machine learning, Generative AI, Cancer Genomics</i>
-                    </p>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br> 
-                     <img src="images/IMG_WW.jpg" align="left" width="150" height="200" HSPACE="20" style="object-fit: cover;">
-                     <br>
-                     <p style="text-align:justify"><font size="4">Wendy Wan is an undergraduate student in the lab. She is completing her undergraduate degree in Bioinformatics and Computational Biology at the University of Toronto. She is interested in learning about bioinformatics methods, coding, and design. Outside of the lab, she enjoys attending music festivals, exploring new cafes and restaurants, and watch food videos.</font></p>
-                     <p style="margin-left:190px; font-size:14px;">
-                          <a href="https://www.linkedin.com/in/wendyziweiwan/" target="_blank" style="color:#0A66C2; margin-right:10px; text-decoration:none;">
-                              <i class="fa fa-linkedin-square fa-lg"></i>
-                         </a>
-                         <i>Research interests: computer vision, machine learning</i>
-                    </p>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <img src="images/IMG_JG.jpg" align="left" width="150" height="200" HSPACE="20" style="object-fit: cover;">
-                     <br>
-                     <p style="text-align:justify"><font size="4">Julia Gilley is an undergraduate student in the lab. She is completing a double major in Bioinformatics and Computational Biology and Computer Science at the University of Toronto. Her research interests include sequencing technology and optimization. Outside the lab, she enjoys running and video games.</font></p>
-                     <p style="margin-left:190px; font-size:14px;">
-                          <a href="https://www.linkedin.com/in//" target="_blank" style="color:#0A66C2; margin-right:10px; text-decoration:none;">
-                              <i class="fa fa-linkedin-square fa-lg"></i>
-                         </a>
-                         <i>Research interests: loading...</i>
-                    </p>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                    <img src="images/KL.jpg" align="left" width="150" height="200" HSPACE="20" style="object-fit: cover;">
-                     <br>
-                    <p style="text-align:justify"><font size="4">Katie Lee is an undergraduate student in the lab. She is completing her degree in Bioinformatics and Computational Biology at the University of Toronto. She is passionate about computational methods to analyze DNA and mutations. In her free time, she enjoys baking cakes, painting, and playing video games.</font></p>
-                    <p style="margin-left:190px; font-size:14px;">
-                          <a href="https://www.linkedin.com/in/katiedain/" target="_blank" style="color:#0A66C2; margin-right:10px; text-decoration:none;">
-                              <i class="fa fa-linkedin-square fa-lg"></i>
-                         </a>
-                         <i>Research interests: loading...</i>
-                    </p> 
-                    <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                    <img src="images/IMG_SL.jpg" align="left" width="150" height="200" HSPACE="20" style="object-fit: cover;">
-                     <br>
-                    <p style="text-align:justify"><font size="4">Sophia Li is an undergraduate student in Computer Science and Bioinformatics & Computational Biology at the University of Toronto. Outside of her studies, she enjoys reading, attending music festivals, and watching the Amazing World of Gumball.</font></p>
-                    <p style="margin-left:190px; font-size:14px;">
-                          <a href="https://www.linkedin.com/in/sophia-li-9a9b931b7/" target="_blank" style="color:#0A66C2; margin-right:10px; text-decoration:none;">
-                              <i class="fa fa-linkedin-square fa-lg"></i>
-                         </a>
-                         <i>Research interests: Machine learning, computational pathology, multimodal learning</i>
-                    </p> 
-                    <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <img src="images/IMG_LF.jpg" align="left" width="150" height="200" HSPACE="20" style="object-fit: cover;">
-                     <br>
-                     <p style="text-align:justify"><font size="4">Lucy Fuccilo is the administrative assistant for the CCGLab. She has extensive experience working at princess margaret. Outside of the lab Lucy loves to walk her dog Watson, who is extremely cute.</font></p>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>    
-                     <img src="images/lab_logo.png" align="left" width="200" height="200" HSPACE="20" style="object-fit: cover;">
-                     <br>
-                     <br>
-                     <br>
-                     <p style="text-align:justify"><font size="4">We are looking for enthusiastic researchers and students interested in computational biology and cancer research to <a href="#joinus" class="smoothScroll"><b>JOIN US</a>!</b></font></p>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <br>
-                     <p style="text-align:justify"><font size="4"><b><u>Alumni</u></b></font></p>
-                     <p style="text-align:justify">Shaoshi Zhang &emsp;        (Current Position: Graduate Student at the University of Western Ontario)</font></p>
-                     <p style="text-align:justify">Grace Hu &emsp;             (Current Position: MD Student at the University of Toronto)</font></p>
-                     <p style="text-align:justify">Luke Zhang &emsp;           (Current Position: PhD Student at the University of Toronto)</font></p>
-                     <p style="text-align:justify">Jean Yaacoub &emsp;         (Current Position: Software engineer @ Google)</font></p>
-                     <p style="text-align:justify">Yumika Shiba &emsp;         (Current Position: PhD Student at the University of Toronto)</font></p>
-                     <p style="text-align:justify">Victoria Valeeva &emsp;    (Current Position: PhD Student at the University of British Columbia)</font></p>
-                     <p style="text-align:justify">Jackson Howe &emsp;         (Current Position: Graduate Management Rotation @ Labatt)</font></p>
-
-               </div>
-
-          </div>
-     </div>
-
-</div>
-</section>
-
-
-
 
 <!-- PEOPLE -->
-<section id="joinus" class="parallax-section">
+<section id="people" class="parallax-section section-panel">
      <div class="container">
-          <div class="row">
+          <div class="content-card people-info">
+               <h2 class="section-heading">Team</h2>
 
-               <div class="col-md-12 col-sm-12" -->
-               <!-- div class="col-md-10 col-sm-12" -->
-                    <div class="joinus-info">
-                    <h1><b>Join</b></h1>
-                    <br>
-                    <br>
-                     <img src="images/torontodowntown2.jpg" alt="Toronto skyline" style="display:block; margin:40px auto 18px auto; max-width:100%; height:auto;">
-                     <br>
-                     <br>
-                     <br>
-                     <p style="text-align:justify" style="color:blue;"><font size="5"><u> Postdoctoral Associate </u></font></p>
-                      <p style="text-align:justify"><font size="4"><b>Job description:</b> Applications are invited for postdoctoral positions in the computational cancer genomics laboratory at the Princess Margaret Cancer Center. We are interested in working with highly motivated people interested in building tools and analyzing large-scale cancer multi-omics data. They will have opportunities to collaborate with a diverse group of experimental and computational biologists at the Princess Margaret Cancer Centre and the University of Toronto. We are looking for candidates with prior experience in computational biology</font></p>
-                     <br>
-                     <p style="text-align:justify"><font size="4"><b>Eligibility requirement:</b>  A Ph.D. in computational biology, bioinformatics, genomics, computer science, or a related field is required. A strong computational background, proficiency in at least one programming language, knowledge of machine learning and statistics are also needed. </font></p>
-                     <br>
-                     <p style="text-align:justify"><font size="4"><b>How to Apply:</b> Interested candidates should send a cover letter, CV, link to their GitHub/another codebase, and names of three references to Dr. Kumar (sushantDotkumarAtuhnresearchDotCA). </p>
-                     <br>
-                     <br>
-                     <p style="text-align:justify" style="color:blue;"><font size="5"><u> Graduate and Undergraduate Students </u></font></p>
-                     <p style="text-align:justify"><font size="4"> Interested students should send an email to Dr. Kumar (sushantDotkumarAtuhnresearchDotca) to discuss potential projects in the lab. </p>
+               <div class="team-grid">
+                   <article class="person-card featured">
+                         <img src="images/IMG_SK.jpg" alt="Sushant Kumar">
+                         <div>
+                              <p class="person-role">Principal Investigator</p>
+                              <p>Sushant Kumar is the <strong>Canada Research Chair</strong> (Tier 2) in <strong>Genomic Medicine</strong> and an Assistant Professor in the <strong><a href="https://medbio.utoronto.ca/faculty/kumar" target="_blank" rel="noopener noreferrer">Department of Medical Biophysics</a></strong> at the University of Toronto. He is also a scientist at the <strong><a href="http://www.uhnresearch.ca/institutes/pm" target="_blank" rel="noopener noreferrer">Princess Margaret Cancer Center</a></strong>. His expertise and research interests are in computational biology/bioinformatics, cancer biology, genomics, machine learning, and biophysics. Outside of work, he likes to watch sports documentaries and spend time with family.</p>
+                         </div>
+                    </article>
 
+                    <article class="person-card">
+                         <img src="images/IMG_NN.jpg" alt="Nirvana Nursimulu">
+                         <p class="person-role">Postdoctoral Fellow</p>
+                         <p>Nirvana Nursimulu is a postdoctoral researcher in the lab. She completed her undergraduate degree in Bioinformatics and Computational Biology at the University of Toronto, after which she embarked on a journey through graduate school at the University of Toronto studying Computer Science under the supervision of Dr Parkinson and Dr Moses. From her previous work, she remains fascinated by how mathematics can be used to capture biological phenomena and model the growth of parasites. In her free time, she enjoys reading and writing fiction, running, and has occasionally engaged in improvisational theatre.</p>
+                         <p class="person-links"><a href="https://www.linkedin.com/in/nirvana-nursimulu/" target="_blank" rel="noopener noreferrer" aria-label="Nirvana Nursimulu on LinkedIn"><i class="fa fa-linkedin-square"></i></a><span>Research interests: Metabolic rewiring in cancer</span></p>
+                    </article>
+
+                    <article class="person-card">
+                         <img src="images/IMG_SB.jpg" alt="Saman Bazmi">
+                         <p class="person-role">Postdoctoral Fellow</p>
+                         <p>Saman Bazmi is a postdoctoral researcher in the lab. He completed his PhD in Computational Biophysics at Memorial University of Newfoundland. His research interests are computational biology, molecular dynamics, and cancer genomics. In his free time, he likes to watch criminal tv series, hiking, and cooking.</p>
+                         <p class="person-links"><a href="https://www.linkedin.com/in/saman-bazmi/" target="_blank" rel="noopener noreferrer" aria-label="Saman Bazmi on LinkedIn"><i class="fa fa-linkedin-square"></i></a><span>Research interests: DNA Structure and Dynamics, Machine Learning</span></p>
+                    </article>
+
+                    <article class="person-card">
+                         <img src="images/IMG_Y.jpg" alt="Yosef Masoudi-Sobhanzadeh">
+                         <p class="person-role">Research Scientist</p>
+                         <p>Yosef received his Ph.D. in Bioinformatics in 2019 from the University of Tehran and completed a year-long postdoctoral program. Before moving to UHN, Yosef held a faculty teaching position at the Tabriz University of Medical Sciences and then completed a two-year-long postdoctoral course at Queen's University. Yosef has over a decade of teaching experience (from undergraduate to Ph.D. level) in Bioinformatics. He is interested in introducing novel algorithms, developing machine learning methods, and designing efficient data structures for biological applications.</p>
+                         <p class="person-links"><a href="https://www.linkedin.com/in/yosef-masoudi-sobhanzadeh-975235119/" target="_blank" rel="noopener noreferrer" aria-label="Yosef Masoudi-Sobhanzadeh on LinkedIn"><i class="fa fa-linkedin-square"></i></a><span>Research interests: Nucleosomes, Machine Learning</span></p>
+                    </article>
+
+                    <article class="person-card">
+                         <img src="images/IMG_NB2.jpg" alt="Nadejda Boev">
+                         <p class="person-role">PhD Student</p>
+                         <p>Nadejda Boev is a PhD student in the Department of Medical Biophysics at the University of Toronto. She completed her undergraduate degree in Biology &amp; Mathematics at Queen's University. In her free time, she enjoys going on walks and listening to podcasts.</p>
+                         <p class="person-links"><a href="https://www.linkedin.com/in/nadejda-boev-509919199/" target="_blank" rel="noopener noreferrer" aria-label="Nadejda Boev on LinkedIn"><i class="fa fa-linkedin-square"></i></a><span>Research interests: DNA repair. rare disease and cancer genetics, DNA shape</span></p>
+                    </article>
+
+                    <article class="person-card">
+                         <img src="images/IMG_NH.jpg" alt="Nour Hanafi">
+                         <p class="person-role">PhD Student</p>
+                         <p>Nour Hanafi is a PhD student in the Department of Medical Biophysics at the University of Toronto (U of T). She completed her undergraduate degree in Molecular Biology with a Chemistry minor at U of T Mississauga, an MHSc in Medical Genomics at U of T, and worked as an analyst at the SickKids’ Centre for Computational Medicine. In her free time, she enjoys long walks, trying out new iced drinks, and watching her favorite sports teams, Atletico Madrid and the Toronto Raptors.</p>
+                         <p class="person-links"><a href="https://www.linkedin.com/in/nour-hanafi-2493ba148/" target="_blank" rel="noopener noreferrer" aria-label="Nour Hanafi on LinkedIn"><i class="fa fa-linkedin-square"></i></a><span>Research interests: Protein structure and motion, variant effect, pentrance and expressivity, rare disease and cancer genetics</span></p>
+                    </article>
+
+                    <article class="person-card">
+                         <img src="images/IMG_AT.jpg" alt="Alexander Turco">
+                         <p class="person-role">MSc Student</p>
+                         <p>Alexander Turco is a MSc student in the Department of Medical Biophysics at the University of Toronto (U of T). He completed his undergraduate degree in Bioinformatics with a research specialization at McMaster University. In his free time, he enjoys Rubiks cubes, snowboarding, building computers, and playing his favorite video game, Stardew Valley.</p>
+                         <p class="person-links"><a href="https://www.linkedin.com/in/alexander-turco-400369163/" target="_blank" rel="noopener noreferrer" aria-label="Alexander Turco on LinkedIn"><i class="fa fa-linkedin-square"></i></a><span>Research interests: DNA sequencing, non-coding and dark genome, non-B DNA, tandem repeat expansions, machine learning for genomics</span></p>
+                    </article>
+
+                    <article class="person-card">
+                         <img src="images/IMG_H.png" alt="Hayden Yu">
+                         <p class="person-role">MSc Student</p>
+                         <p>Hayden is a MSc student in Applied Computing at University of Toronto. Before that, he completed his undergraduate degree in Computer Science and Mathematics in Hong Kong. His interest surrounds computer vision and enhancing machine learning pipelines for industry uses. In leisure time, he likes hiking, bouldering, and snowboarding.</p>
+                         <p class="person-links"><a href="https://www.linkedin.com/in/cheuk-hei-yu-hayden/" target="_blank" rel="noopener noreferrer" aria-label="Hayden Yu on LinkedIn"><i class="fa fa-linkedin-square"></i></a><span>Research interests: computer vision, machine learning</span></p>
+                    </article>
+
+                    <article class="person-card">
+                         <img src="images/IMG_MZ.jpg" alt="Mingjie Zhao">
+                         <p class="person-role">MSc Student</p>
+                         <p>Mingjie Zhao is a MSc student in Applied Computing at the University of Toronto. He completed his undergraduate degree in Statistics and Data Science at the University of Waterloo. Outside of his studies, he enjoys long walks, cooking, and exploring his creativity through drawing and painting.</p>
+                         <p class="person-links"><a href="https://www.linkedin.com/in/mingjie-zhao-ds/" target="_blank" rel="noopener noreferrer" aria-label="Mingjie Zhao on LinkedIn"><i class="fa fa-linkedin-square"></i></a><span>Research interests: Protein language models, protein structure, machine learning, liquid-liquid-phase separation</span></p>
+                    </article>
+
+                    <article class="person-card">
+                         <img src="images/IMG_SD.jpeg" alt="Sean D’Mello">
+                         <p class="person-role">MSc Student</p>
+                         <p>Sean D’Mello is an MSc student in Medical Biophysics at the University of Toronto and earned his undergraduate degree in Biomedical Engineering from the University of Waterloo. He completed several co-op placements applying machine learning to medicine, including at the ORTHOTron Lab at the University of Waterloo and the Tearney Lab at Massachusetts General Hospital. Outside of academics, Sean enjoys reading, swimming, and camping</p>
+                         <p class="person-links"><a href="https://www.linkedin.com/in/dmellosean/" target="_blank" rel="noopener noreferrer" aria-label="Sean D’Mello on LinkedIn"><i class="fa fa-linkedin-square"></i></a><span>Research interests: Machine Learning, Generative AI, Computational Pathology, Multi-omic Analysis</span></p>
+                    </article>
+
+                    <article class="person-card">
+                         <img src="images/IMG_OA.jpg" alt="Omar Alawamry">
+                         <p class="person-role">MSc Student</p>
+                         <p>Omar Alawamry is an MSc student in Medical Biophysics at the University of Toronto, co-supervised by Dr. Mélanie Courtot, and earned his undergraduate degree in Biochemistry at McMaster University. He has conducted translational clinical research at Sunnybrook Research Institute, focusing on the development of liquid biopsies using emerging technologies such as imaging flow cytometry. His current interests lie in cancer genomics and the development of bioinformatic tools. In his free time, he enjoys preparing café-style drinks at home and playing tennis.</p>
+                         <p class="person-links"><a href="https://www.linkedin.com/in/oalawamry/" target="_blank" rel="noopener noreferrer" aria-label="Omar Alawamry on LinkedIn"><i class="fa fa-linkedin-square"></i></a><span>Research interests: Bioinformatics, Machine learning, Generative AI, Cancer Genomics</span></p>
+                    </article>
+
+                    <article class="person-card">
+                         <img src="images/IMG_WW.jpg" alt="Wendy Wan">
+                         <p class="person-role">Undergraduate Student</p>
+                         <p>Wendy Wan is an undergraduate student in the lab. She is completing her undergraduate degree in Bioinformatics and Computational Biology at the University of Toronto. She is interested in learning about bioinformatics methods, coding, and design. Outside of the lab, she enjoys attending music festivals, exploring new cafes and restaurants, and watch food videos.</p>
+                         <p class="person-links"><a href="https://www.linkedin.com/in/wendyziweiwan/" target="_blank" rel="noopener noreferrer" aria-label="Wendy Wan on LinkedIn"><i class="fa fa-linkedin-square"></i></a><span>Research interests: computer vision, machine learning</span></p>
+                    </article>
+
+                    <article class="person-card">
+                         <img src="images/IMG_JG.jpg" alt="Julia Gilley">
+                         <p class="person-role">Undergraduate Student</p>
+                         <p>Julia Gilley is an undergraduate student in the lab. She is completing a double major in Bioinformatics and Computational Biology and Computer Science at the University of Toronto. Her research interests include sequencing technology and optimization. Outside the lab, she enjoys running and video games.</p>
+                         <p class="person-links"><a href="https://www.linkedin.com/in//" target="_blank" rel="noopener noreferrer" aria-label="Julia Gilley on LinkedIn"><i class="fa fa-linkedin-square"></i></a><span>Research interests: loading...</span></p>
+                    </article>
+
+                    <article class="person-card">
+                         <img src="images/KL.jpg" alt="Katie Lee">
+                         <p class="person-role">Undergraduate Student</p>
+                         <p>Katie Lee is an undergraduate student in the lab. She is completing her degree in Bioinformatics and Computational Biology at the University of Toronto. She is passionate about computational methods to analyze DNA and mutations. In her free time, she enjoys baking cakes, painting, and playing video games.</p>
+                         <p class="person-links"><a href="https://www.linkedin.com/in/katiedain/" target="_blank" rel="noopener noreferrer" aria-label="Katie Lee on LinkedIn"><i class="fa fa-linkedin-square"></i></a><span>Research interests: loading...</span></p>
+                    </article>
+
+                    <article class="person-card">
+                         <img src="images/IMG_SL.jpg" alt="Sophia Li">
+                         <p class="person-role">Undergraduate Student</p>
+                         <p>Sophia Li is an undergraduate student in Computer Science and Bioinformatics &amp; Computational Biology at the University of Toronto. Outside of her studies, she enjoys reading, attending music festivals, and watching the Amazing World of Gumball.</p>
+                         <p class="person-links"><a href="https://www.linkedin.com/in/sophia-li-9a9b931b7/" target="_blank" rel="noopener noreferrer" aria-label="Sophia Li on LinkedIn"><i class="fa fa-linkedin-square"></i></a><span>Research interests: Machine learning, computational pathology, multimodal learning</span></p>
+                    </article>
+
+                    <article class="person-card">
+                         <img src="images/IMG_LF.jpg" alt="Lucy Fuccilo">
+                         <p class="person-role">Administrative Assistant</p>
+                         <p>Lucy Fuccilo is the administrative assistant for the CCGLab. She has extensive experience working at princess margaret. Outside of the lab Lucy loves to walk her dog Watson, who is extremely cute.</p>
+                    </article>
                </div>
 
+               <div class="join-callout">
+                    <img src="images/lab_logo.png" alt="CCG Lab logo">
+                    <div>
+                         <p>We are looking for enthusiastic researchers and students interested in computational biology and cancer research to <a href="#joinus" class="smoothScroll"><strong>JOIN US</strong></a>!</p>
+                    </div>
+               </div>
+
+               <div class="alumni-panel">
+                    <h3>Alumni</h3>
+                    <ul class="alumni-list">
+                         <li>Shaoshi Zhang (Current Position: Graduate Student at the University of Western Ontario)</li>
+                         <li>Grace Hu (Current Position: MD Student at the University of Toronto)</li>
+                         <li>Luke Zhang (Current Position: PhD Student at the University of Toronto)</li>
+                         <li>Jean Yaacoub (Current Position: Software engineer @ Google)</li>
+                         <li>Yumika Shiba (Current Position: PhD Student at the University of Toronto)</li>
+                         <li>Victoria Valeeva (Current Position: PhD Student at the University of British Columbia)</li>
+                         <li>Jackson Howe (Current Position: Graduate Management Rotation @ Labatt)</li>
+                    </ul>
+               </div>
           </div>
      </div>
-
-</div>
 </section>
 
+<!-- JOIN -->
+<section id="joinus" class="parallax-section section-panel alt-section">
+     <div class="container">
+          <div class="content-card joinus-info">
+               <h2 class="section-heading">Join</h2>
+               <img src="images/torontodowntown2.jpg" alt="Toronto skyline" class="join-hero">
+               <div class="opportunity-grid">
+                    <article class="opportunity-card">
+                         <h3>Postdoctoral Associate</h3>
+                         <p><strong>Job description:</strong> Applications are invited for postdoctoral positions in the computational cancer genomics laboratory at the Princess Margaret Cancer Center. We are interested in working with highly motivated people interested in building tools and analyzing large-scale cancer multi-omics data. They will have opportunities to collaborate with a diverse group of experimental and computational biologists at the Princess Margaret Cancer Centre and the University of Toronto. We are looking for candidates with prior experience in computational biology</p>
+                         <p><strong>Eligibility requirement:</strong> A Ph.D. in computational biology, bioinformatics, genomics, computer science, or a related field is required. A strong computational background, proficiency in at least one programming language, knowledge of machine learning and statistics are also needed.</p>
+                         <p><strong>How to Apply:</strong> Interested candidates should send a cover letter, CV, link to their GitHub/another codebase, and names of three references to Dr. Kumar (sushantDotkumarAtuhnresearchDotCA).</p>
+                    </article>
+                    <article class="opportunity-card">
+                         <h3>Graduate and Undergraduate Students</h3>
+                         <p>Interested students should send an email to Dr. Kumar (sushantDotkumarAtuhnresearchDotca) to discuss potential projects in the lab.</p>
+                    </article>
+               </div>
+          </div>
+     </div>
+</section>
 
 <!-- NEWS -->
-<section id="news" class="parallax-section">
+<section id="news" class="parallax-section section-panel">
      <div class="container">
-          <div class="row">
-
-               <div class="col-md-12 col-sm-12" -->
-               <!-- div class="col-md-10 col-sm-12" -->
-                    <div class="news-info">
-                      <h1> <b> News </b> </h1>
-                      <br>
-                         <p style="text-align:left"><font size="3"><b>Winter 2025 -- </b> Nour Hanafi received a Marathon of Hope Cancer Centres Network Scholarship award. Many congratulations, Nour!</font></p>
-
-                         <p style="text-align:left"><font size="3"><b>Fall 2025 -- </b> Nad received a Canada Graduate Scholarship award from CIHR to pursue her PhD thesis. Many congratulations, Nad!</font></p>
-
-                         <p style="text-align:left"><font size="3"><b>Fall 2025 -- </b> Alex received a Canada Graduate Scholarship award from CIHR to pursue his MSc thesis. Many congratulations, Alex!</font></p>
-
-                         <p style="text-align:left"><font size="3"><b>Fall 2023 -- </b> Nour Hanafi joins the lab to pursue her PhD at MBP. Welcome, Nour!</font></p>
-                         
-                         <p style="text-align:left"><font size="3"><b> Fall 2023 -- </b> Nirvana Nursimulu joins the lab as the inaugural CBMP Postdoctoral Fellow. Welcome Nirvana!</font></p>
-
-                         <p style="text-align:left"><font size="3"><b> Fall 2023 -- </b> Saman Bazmi joins our group as postdoctoral associate. Welcome Saman!</font></p>
-
-                         <p style="text-align:left"><font size="3"><b> Summer 2023 -- </b> Alexander Turco joined our group for the summer as an undergraduate student researcher. Welcome Alex!</font></p>
-                         
-                         <p style="text-align:left"><font size="3"><b> Summer 2023 -- </b> Jackson Howe joined our group for the summer as a UofT Data Science Institute SUDS scholar. Welcome Jackson!</font></p>
-
-                         <p style="text-align:left"><font size="3"><b>Summer 2023 -- </b> Jean Yaacoub joined the lab for his coop internship as part of his graduate study in the MScAC program at UofT. Welcome Jean!</font></p>
-
-                         <p style="text-align:left"><font size="3"><b> Spring 2023 -- </b> Sushant attended the annual V summit in Virginia and presented our efforts toward cancer prevention and early detection.</font></p>
-
-                         <p style="text-align:left"><font size="3"><b> Spring 2023 -- </b> Nad received a Canada Graduate Scholarship award from CIHR to pursue her MSc thesis. Many congratulations, Nad!</font></p>
-
-                         <p style="text-align:left"><font size="3"><b> Spring 2023 -- </b> Our lab received funding from NSERC to study the evolution of the gene regulation process. We are very grateful for the support.</font></p>
-                     
-                         <p style="text-align:left"><font size="3"><b>Winter 2022 -- </b> Nadejda Boev joined the lab for her graduate studies. Welcome, Nad!</font></p>
-
-                         <p style="text-align:left"><font size="3"><b>Fall 2022 -- </b> Our lab received funding support from the Canada Research Chair Program. We are immensely thankful to CIHR.</font></p>
-
-                         <p style="text-align:left"><font size="3"><b> Fall 2022 -- </b> Our lab received funding from the V Foundation for Cancer Research as part of the V scholar program. We are very grateful.</font></p>
-                   
+          <div class="content-card news-info">
+               <h2 class="section-heading">News</h2>
+               <div class="news-timeline">
+                    <article><time>Winter 2025 --</time><p>Nour Hanafi received a Marathon of Hope Cancer Centres Network Scholarship award. Many congratulations, Nour!</p></article>
+                    <article><time>Fall 2025 --</time><p>Nad received a Canada Graduate Scholarship award from CIHR to pursue her PhD thesis. Many congratulations, Nad!</p></article>
+                    <article><time>Fall 2025 --</time><p>Alex received a Canada Graduate Scholarship award from CIHR to pursue his MSc thesis. Many congratulations, Alex!</p></article>
+                    <article><time>Fall 2023 --</time><p>Nour Hanafi joins the lab to pursue her PhD at MBP. Welcome, Nour!</p></article>
+                    <article><time>Fall 2023 --</time><p>Nirvana Nursimulu joins the lab as the inaugural CBMP Postdoctoral Fellow. Welcome Nirvana!</p></article>
+                    <article><time>Fall 2023 --</time><p>Saman Bazmi joins our group as postdoctoral associate. Welcome Saman!</p></article>
+                    <article><time>Summer 2023 --</time><p>Alexander Turco joined our group for the summer as an undergraduate student researcher. Welcome Alex!</p></article>
+                    <article><time>Summer 2023 --</time><p>Jackson Howe joined our group for the summer as a UofT Data Science Institute SUDS scholar. Welcome Jackson!</p></article>
+                    <article><time>Summer 2023 --</time><p>Jean Yaacoub joined the lab for his coop internship as part of his graduate study in the MScAC program at UofT. Welcome Jean!</p></article>
+                    <article><time>Spring 2023 --</time><p>Sushant attended the annual V summit in Virginia and presented our efforts toward cancer prevention and early detection.</p></article>
+                    <article><time>Spring 2023 --</time><p>Nad received a Canada Graduate Scholarship award from CIHR to pursue her MSc thesis. Many congratulations, Nad!</p></article>
+                    <article><time>Spring 2023 --</time><p>Our lab received funding from NSERC to study the evolution of the gene regulation process. We are very grateful for the support.</p></article>
+                    <article><time>Winter 2022 --</time><p>Nadejda Boev joined the lab for her graduate studies. Welcome, Nad!</p></article>
+                    <article><time>Fall 2022 --</time><p>Our lab received funding support from the Canada Research Chair Program. We are immensely thankful to CIHR.</p></article>
+                    <article><time>Fall 2022 --</time><p>Our lab received funding from the V Foundation for Cancer Research as part of the V scholar program. We are very grateful.</p></article>
                </div>
-
           </div>
      </div>
-  </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="parallax-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-sm-12">
-        <div class="contact-info">
-
-          <h1>Contact</h1>
-
-          <div class="contact-layout">
-
-            <!-- Map -->
-            <div class="contact-map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11545.70191529215!2d-79.3877351!3d43.6601202!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6a2acad7b5f4519!2sPrincess%20Margaret%20Cancer%20Research%20Tower!5e0!3m2!1sen!2sca!4v1643945463351!5m2!1sen!2sca"
-                loading="lazy"
-                allowfullscreen>
-              </iframe>
-            </div>
-
-            <!-- Text -->
-            <div class="contact-text">
-              <p><strong>Computational Cancer Genomics Lab</strong></p>
-              <p>
-                Princess Margaret Cancer Research Tower<br>
-                University Health Network, University of Toronto<br>
-                101 College Street<br>
-                Toronto, ON M5G 0A3
-              </p>
-            </div>
-
+<section id="contact" class="parallax-section section-panel alt-section">
+     <div class="container">
+          <div class="content-card contact-info">
+               <h2 class="section-heading">Contact</h2>
+               <div class="contact-layout">
+                    <div class="contact-map">
+                         <iframe
+                              title="Map to Princess Margaret Cancer Research Tower"
+                              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11545.70191529215!2d-79.3877351!3d43.6601202!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6a2acad7b5f4519!2sPrincess%20Margaret%20Cancer%20Research%20Tower!5e0!3m2!1sen!2sca!4v1643945463351!5m2!1sen!2sca"
+                              loading="lazy"
+                              referrerpolicy="no-referrer-when-downgrade"
+                              allowfullscreen>
+                         </iframe>
+                    </div>
+                    <div class="contact-text">
+                         <img src="images/lab_logo.png" alt="CCG Lab logo" class="contact-text-logo">
+                         <h3>Computational Cancer Genomics Lab</h3>
+                         <p>Princess Margaret Cancer Research Tower<br>
+                         University Health Network, University of Toronto<br>
+                         101 College Street<br>
+                         Toronto, ON M5G 0A3</p>
+                    </div>
+               </div>
           </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
+     </div>
 </section>
-
 
 <!-- FOOTER -->
 <footer>
      <div class="container">
-          <div class="row">
-
-
-
-               <div class="clearfix"></div>
-
-               <div class="col-md-12 col-sm-12">
-                    <div class="copyright-text">
-                         <p>Copyright © 2021 Sushant Kumar
-
-                         | Design: Tooplate
-                         
-                         | Homepage video: <a href="https://www.videezy.com/abstract/48917-dna-assemble-background"> videezy </a>  </p>
-                    </div>
-               </div>
-
+          <div class="copyright-text">
+               <p>Copyright © 2021 Sushant Kumar | Design: Tooplate</p>
           </div>
      </div>
 </footer>
@@ -681,7 +399,6 @@ http://www.tooplate.com/view/2099-scenic
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/magnific-popup-options.js"></script>
 <script src="js/modernizr.custom.js"></script>
-<script src="js/smoothscroll.js"></script>
 <script src="js/custom.js"></script>
 
 </body>

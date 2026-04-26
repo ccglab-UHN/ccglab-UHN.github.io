@@ -90,7 +90,7 @@ p {
   letter-spacing: 0.5px;
   padding: 0 55px;
   /*background: #000000;*/
-  background: #0000FF
+  background: #0000FF;
   border-radius: 1px;
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
@@ -277,7 +277,7 @@ video {
   animation: spinner .9s linear infinite;
 }
 
-@-webkit-@keyframes spinner {
+@-webkit-keyframes spinner {
   to {transform: rotate(360deg);}
 }
 
